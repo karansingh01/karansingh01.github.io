@@ -36,10 +36,6 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:cs
-      - name: lint
-        run: npm run lint
-
-
 
 
 
