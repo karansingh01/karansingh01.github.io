@@ -16,7 +16,9 @@
         "prettier-w": "prettier -w .",
         "test": "jest",
         "coverage": "jest --coverage --coverageReporters=lcov",
-        "test:watch": "jest --watchAll"
+        "test:watch": "jest --watchAll",
+        "lint": "eslint . --ext js,jsx,ts,tsx --fix"
+
     },
     "repository": {
         "type": "git",

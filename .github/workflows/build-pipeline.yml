@@ -32,6 +32,9 @@ jobs:
         run: npm ci
       - name: test
         run: npm run test
+      - name: lint
+        run: npm run lint
+
 
 
 
@@ -55,4 +58,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-      # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
