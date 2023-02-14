@@ -32,6 +32,10 @@ jobs:
         run: npm ci
       - name: test
         run: npm run test
+      - name: Run typescript lint and format check
+        run: npm run lint:ts
+      - name: Run styles lint and format check
+        run: npm run lint:cs
       - name: lint
         run: npm run lint
 
