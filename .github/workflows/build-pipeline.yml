@@ -21,6 +21,7 @@ jobs:
         run: npm run build
 # Step 3 - Add tests and linting her
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -30,14 +31,12 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
-      - name: build
-        run: npm run build
-      - name: test
+      - name: Run unit tests
         run: npm run test
       - name: Run typescript lint and format check
         run: npm run lint:ts
       - name: Run styles lint and format check
-        run: npm run lint:cs
+        run: npm run lint:css
 
 
 
